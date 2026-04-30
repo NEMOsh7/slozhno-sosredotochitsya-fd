@@ -1,12 +1,13 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --background-image_page: url(../images/cover-image-dark.png);
+  --accent-light-color: #FF0070;
+  --accent-back-color: #000028;
+  --section-title-color: #FF0070;
+  --title-color-text: #DB00FF;
+  --main-text-color: #F1B2CE;
+  --focus-title-color: #DB00FF;
+  --block-title-color: #000028;
+  --coner-color: #FF0070;
+  --menu-color: #FF0070;
+  --display-rec: inline-block;
 }
