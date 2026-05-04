@@ -43,7 +43,7 @@
   text-align: center;
 }
 
-*/ .header__theme-menu-button:hover {
+.header__theme-menu-button:hover {
   border: 1px solid var(--transparent-accent-color);
 }
 
@@ -92,9 +92,9 @@
   right: 10px;
   font-family: var(--main-font);
   font-weight: 400;
-  font-style: Regular;
+  font-style: normal;
   font-size: 18px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .decorated-zone_header::after {
@@ -132,7 +132,7 @@
   line-height: 23.4px;
   font-family: var(--main-font);
   font-weight: 400;
-  font-style: Regular;
+  font-style: normal;
   font-size: 18px;
   color: var(--block-title-color);
   background-color: var(--accent-light-color);
@@ -152,7 +152,7 @@
 
 .section-title {
   font-family: var(--main-font);
-  font-style: Bold;
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   color: var(--section-title-color);
@@ -161,7 +161,7 @@
 .uder-paragraph-title {
   align-self: center;
   line-height: 23px;
-  font-style: Bold;
+  font-style: normal;
   font-weight: 700;
 }
 
@@ -325,7 +325,7 @@
 
   .factors-grid .text-block {
     grid-column: 1 / 5;
-    grid-row: 2 auto;
+    grid-row: 2 / auto;
   }
 
   .guidelines-grid {
