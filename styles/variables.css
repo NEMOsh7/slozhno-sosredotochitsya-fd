@@ -1,4 +1,5 @@
 :root {
+  --main-font: 'IBM Plex Mono', 'Courier New', Courier, monospace;
   --background-image_page: url(../images/cover-image-dark.png);
   --accent-light-color: #FF0070;
   --accent-back-color: #000028;

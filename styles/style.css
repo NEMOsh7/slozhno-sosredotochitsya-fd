@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  font-family: var(--main-font), monospace;
+  font-family: var(--main-font);
   font-size: 18px;
   gap: var(--gap-m);
 }
@@ -36,7 +36,7 @@
   text-transform: lowercase;
   padding-inline: 13px;
   border: none;
-  font-family: 'IBM Plex Mono';
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -90,7 +90,7 @@
   position: absolute;
   color: var(--accent-light-color);
   right: 10px;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--main-font);
   font-weight: 400;
   font-style: Regular;
   font-size: 18px;
@@ -120,7 +120,7 @@
   align-self: center;
   line-height: 82.5%;
   text-shadow: 4px 4px 0px var(--accent-light-color);
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -130,7 +130,7 @@
 
 .title-decor {
   line-height: 23.4px;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--main-font);
   font-weight: 400;
   font-style: Regular;
   font-size: 18px;
@@ -142,7 +142,7 @@
 
 .title_section-galery {
   line-height: 23px;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -151,7 +151,7 @@
 }
 
 .section-title {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--main-font);
   font-style: Bold;
   font-weight: 700;
   font-size: 18px;
@@ -161,13 +161,8 @@
 .uder-paragraph-title {
   align-self: center;
   line-height: 23px;
-  font-family: 'IBM Plex Mono', monospace;
   font-style: Bold;
   font-weight: 700;
-  font-size: 18px;
-  color: var(--block-title-color);
-  background-color: var(--accent-light-color);
-  block-size: min-content;
 }
 
 .weight-paragraph-title {
@@ -187,7 +182,7 @@
 
 .main-text {
   line-height: 23.4px;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -208,7 +203,7 @@
   line-height: 23px;
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-light-color);
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -250,7 +245,7 @@
   align-self: center;
   line-height: 82.5%;
   text-shadow: 2px 2px 0px var(--accent-light-color);
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -261,7 +256,7 @@
 @media (width >=768px) {
 
   .page {
-    gap: var(--gap-l);
+    gap: var(--gap-xl);
   }
 
   .header {
@@ -316,12 +311,10 @@
   }
 
   .intro-grid {
-    display: grid;
     grid-template-columns: 1fr 2fr;
   }
 
   .factors-grid {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
 
@@ -336,7 +329,6 @@
   }
 
   .guidelines-grid {
-    display: grid;
     grid-template-columns: 1fr 2fr;
   }
 
@@ -349,7 +341,6 @@
   }
 
   .gallery-grid-content {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: var(--gap-s);
@@ -401,7 +392,6 @@
   }
 
   .text-card {
-    display: grid;
     grid-template-rows: min-content 1fr;
   }
 
@@ -417,4 +407,36 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
+    --background-image_page: url(../images/cover-image-light.png);
+    --accent-light-color: #FF8DCB;
+    --accent-back-color: #fff1f7;
+    --section-title-color: #353430;
+    --title-color-text: #353430;
+    --main-text-color: #353430;
+    --focus-title-color: #FFC2E6;
+    --block-title-color: #353430;
+    --coner-color: #353430;
+    --menu-color: #353430;
+    --display-rec: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root.theme-auto {
+    --background-image_page: url(../images/cover-image-dark.png);
+    --accent-light-color: #FF0070;
+    --accent-back-color: #000028;
+    --section-title-color: #FF0070;
+    --title-color-text: #DB00FF;
+    --main-text-color: #F1B2CE;
+    --focus-title-color: #DB00FF;
+    --block-title-color: #000028;
+    --coner-color: #FF0070;
+    --menu-color: #FF0070;
+    --display-rec: inline-block;
+  }
 }
